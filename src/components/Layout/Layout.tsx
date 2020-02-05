@@ -1,4 +1,12 @@
 import React from 'react';
+import styled, { ThemeProvider } from 'styled-components';
+
+import { GlobalStyle, theme } from './_styles';
+
+const Wrapper = styled.main`
+  max-width: 960px;
+  margin: 0 auto;
+`;
 
 interface Props {
   children: JSX.Element | JSX.Element[];
@@ -6,9 +14,10 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
   return (
-    <>
-      <main>{children}</main>
-    </>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Wrapper>{children}</Wrapper>
+    </ThemeProvider>
   );
 };
 
