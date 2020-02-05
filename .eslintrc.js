@@ -3,6 +3,10 @@ module.exports = {
   rules: {
     '@typescript-eslint/explicit-function-return-type': 'off',
     'comma-dangle': ['error', 'always-multiline'],
+    'import/no-extraneous-dependencies': [
+      'error',
+      { devDependencies: ['**/*.test.tsx', '**/*.spec.ts'] },
+    ],
     quotes: ['error', 'single', { allowTemplateLiterals: false }],
   },
   settings: {
