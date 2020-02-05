@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable @typescript-eslint/camelcase */
 const path = require('path');
 
@@ -8,7 +9,7 @@ module.exports = {
     author: 'Wannes Salomé',
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-react-helmet-async',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
