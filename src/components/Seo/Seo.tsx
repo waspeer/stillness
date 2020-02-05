@@ -21,10 +21,10 @@ interface Props {
   title: string;
 }
 
-function SEO({ description = '', lang = 'en', meta = [], title }: Props) {
+const Seo = ({ description = '', lang = 'en', meta = [], title }: Props) => {
   const { site } = useStaticQuery(
     graphql`
-      query {
+      query SiteMetadata {
         site {
           siteMetadata {
             title
@@ -81,6 +81,6 @@ function SEO({ description = '', lang = 'en', meta = [], title }: Props) {
       ].concat(meta)}
     />
   );
-}
+};
 
-export default SEO;
+export default Seo;
