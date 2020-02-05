@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-tdd-test",
+  "name": "gatsby-starter",
   "private": true,
-  "description": "A test to find a TDD setup with Gatsby",
+  "description": "My personal Gatsby starter",
   "version": "0.1.0",
   "author": "Wannes Salomé <mail@wannessalome.nl>",
   "dependencies": {
