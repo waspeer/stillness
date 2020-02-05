@@ -16,7 +16,7 @@ const Layout = ({ children }: Props) => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Wrapper>{children}</Wrapper>
+      <Wrapper data-testid="layout-container">{children}</Wrapper>
     </ThemeProvider>
   );
 };
