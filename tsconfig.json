@@ -22,7 +22,6 @@
       "#components/*": ["./components/*"],
       "#lib/*": ["./lib/*"],
       "#pages/*": ["./pages/*"]
-    },
-    "types": ["cypress"]
+    }
   }
 }
