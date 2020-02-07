@@ -10,14 +10,29 @@
   <p>Opinionated Gatsby Starter</p>
 </div>
 
-This is my Gatsby starter using **Typescript**, **ESLint** and **Prettier** (with the help of [**Poetic**](https://github.com/arianacosta/poetic)) and **stylelint**.
+This is my [Gatsby](https://gatsbyjs.org/) starter using **Typescript**, **ESLint** and **Prettier** (with the help of [**Poetic**](https://github.com/arianacosta/poetic)) and **stylelint**.
 
 Styling with **styled-components**.
 
-Tests with **Jest** and **react-testing-library**.
+Tests with **Jest**, **react-testing-library** and **Cypress**.
 
 ## Usage
 
 ```bash
 $ gatsby new <project-name> https://github.com/waspeer/stillness
 ```
+
+### Test driven development
+
+My motivation for making this starter was to try out test driven development. To fire up the end-to-end and unit tests run the following commands:
+
+```bash
+$ yarn test:e2e
+$ yarn test:unit
+```
+
+When running tests as part of a continuous integration pipeline replace `yarn test:e2e` with `yarn test:e2e:ci`.
+
+## License
+
+MIT © Wannes Salomé
