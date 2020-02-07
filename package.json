@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter",
+  "name": "stillness",
   "private": true,
   "description": "My personal Gatsby starter",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Wannes Salomé <mail@wannessalome.nl>",
   "dependencies": {
     "gatsby": "^2.19.7",
@@ -55,33 +55,42 @@
     "typescript": "^3.7.5"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "react",
+    "typescript",
+    "eslint",
+    "prettier",
+    "poetic",
+    "jest",
+    "react-testing-library",
+    "cypress",
+    "tdd"
   ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "yarn develop",
-    "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test:unit": "jest --runInBand",
-    "code:check": "yarn code:lint; yarn code:format --check",
-    "code:clean": "yarn code:lint --fix; yarn code:format --write",
-    "code:lint": "eslint --ext .js,.jsx,.ts,.tsx \"src/\"",
-    "code:format": "prettier './src/**/**.{js,jsx,ts,tsx}'",
     "code:check:rules": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
-    "style:lint": "stylelint './src/**/*.tsx'",
+    "code:check": "yarn code:lint; yarn code:format --check",
+    "code:clean": "yarn code:lint:eslint --fix; yarn code:format --write",
+    "code:format": "prettier './src/**/**.{js,jsx,ts,tsx,json,md}'",
+    "code:lint:eslint": "eslint --ext .js,.jsx,.ts,.tsx 'src/'",
+    "code:lint:stylelint": "stylelint './src/**/*.tsx'",
+    "code:lint": "yarn code:lint:eslint; yarn code:lint:stylelint",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
+    "develop": "gatsby develop",
+    "serve": "gatsby serve",
+    "start": "yarn develop",
+    "test:e2e:ci": "start-server-and-test develop http://localhost:8000 cy:run",
     "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
-    "test:e2e:ci": "start-server-and-test develop http://localhost:8000 cy:run"
+    "test:unit": "jest --runInBand"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/waspeer/stillness"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/waspeer/stillness/issues"
   }
 }
