@@ -39,8 +39,8 @@ When running tests as part of a continuous integration pipeline replace `yarn te
 -   [x] Add default css breakpoints
 -   [x] Fix linting and formatting commands to also run for test directory
 -   [x] Add helmet provider
--   [ ] Remove old helmet + prop-types
--   [ ] Switch to styled-components gatsby plugin
+-   [x] Remove old helmet + prop-types
+-   [x] Switch to styled-components gatsby plugin
 -   [ ] Add CircleCI config
 -   [ ] Add standard test mocks for context
 
