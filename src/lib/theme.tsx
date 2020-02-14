@@ -18,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
   `;
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
-interface ThemeSettings {}
+export interface ThemeSettings {}
 
 const theme = {
   colors: {

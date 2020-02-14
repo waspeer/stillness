@@ -42,7 +42,7 @@ When running tests as part of a continuous integration pipeline replace `yarn te
 -   [x] Remove old helmet + prop-types
 -   [x] Switch to styled-components gatsby plugin
 -   [x] Add CircleCI config
--   [ ] Add standard test mocks for context
+-   [x] Add standard test mocks for context
 
 ## License
 
