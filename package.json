@@ -80,6 +80,8 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "develop": "gatsby develop",
+    "graphql:download-schema": "apollo client:download-schema -c=apollo-config.js",
+    "graphql:generate-types": "apollo codegen:generate src/lib/types/__generated__/ -c=apollo-config.js  --outputFlat --target=typescript",
     "serve": "gatsby serve",
     "start": "yarn develop",
     "test:e2e:ci": "start-server-and-test develop http://localhost:8000 cy:run",
