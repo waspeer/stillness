@@ -1,7 +1,7 @@
 import React from 'react';
-import styled, { ThemeProvider } from 'styled-components';
+import styled from 'styled-components';
 
-import { GlobalStyle, theme } from './_styles';
+import { GlobalStyle, ThemeProvider } from '#lib/theme';
 
 const Wrapper = styled.main`
   max-width: 960px;
@@ -14,7 +14,7 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider>
       <GlobalStyle />
       <Wrapper data-testid="layout-container">{children}</Wrapper>
     </ThemeProvider>
