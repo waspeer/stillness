@@ -1,22 +1,6 @@
 import React from 'react';
 import { createGlobalStyle, ThemeProvider as StyledThemeProvider } from 'styled-components';
 
-export const GlobalStyle = createGlobalStyle`
-    html, body {
-      background-color: ${theme.colors.background};
-      color: ${theme.colors.neutral};
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-
-    h1, h2, h3, h4 {
-      color: ${theme.colors.primary};
-      font-family: 'Courier New', Courier, monospace;
-    }
-  `;
-
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface ThemeSettings {}
 
@@ -34,6 +18,22 @@ const theme = {
     xl: 1200,
   },
 };
+
+export const GlobalStyle = createGlobalStyle`
+    html, body {
+      background-color: ${theme.colors.background};
+      color: ${theme.colors.neutral};
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    h1, h2, h3, h4 {
+      color: ${theme.colors.primary};
+      font-family: 'Courier New', Courier, monospace;
+    }
+  `;
 
 interface ThemeProviderProps {
   settings?: ThemeSettings;
