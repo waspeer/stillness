@@ -2,7 +2,7 @@
   "name": "stillness",
   "private": true,
   "description": "My personal Gatsby starter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Wannes Salomé <mail@wannessalome.nl>",
   "dependencies": {
     "gatsby": "^2.19.7",
