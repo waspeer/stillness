@@ -38,7 +38,7 @@ When running tests as part of a continuous integration pipeline replace `yarn te
 -   [x] Add type generation command for graphql endpoints
 -   [x] Add default css breakpoints
 -   [x] Fix linting and formatting commands to also run for test directory
--   [ ] Add helmet provider
+-   [x] Add helmet provider
 -   [ ] Remove old helmet + prop-types
 -   [ ] Switch to styled-components gatsby plugin
 -   [ ] Add CircleCI config

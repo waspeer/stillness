@@ -1,3 +1,4 @@
+import { HelmetProvider } from 'react-helmet-async';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -14,10 +15,12 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
   return (
-    <ThemeProvider>
-      <GlobalStyle />
-      <Wrapper data-testid="layout-container">{children}</Wrapper>
-    </ThemeProvider>
+    <HelmetProvider>
+      <ThemeProvider>
+        <GlobalStyle />
+        <Wrapper data-testid="layout-container">{children}</Wrapper>
+      </ThemeProvider>
+    </HelmetProvider>
   );
 };
 
