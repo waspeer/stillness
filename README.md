@@ -33,17 +33,6 @@ $ yarn test:unit
 
 When running tests as part of a continuous integration pipeline replace `yarn test:e2e` with `yarn test:e2e:ci`.
 
-## Todo
-
--   [x] Add type generation command for graphql endpoints
--   [x] Add default css breakpoints
--   [x] Fix linting and formatting commands to also run for test directory
--   [x] Add helmet provider
--   [x] Remove old helmet + prop-types
--   [x] Switch to styled-components gatsby plugin
--   [x] Add CircleCI config
--   [x] Add standard test mocks for context
-
 ## License
 
 MIT © Wannes Salomé
